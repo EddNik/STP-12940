@@ -1,21 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Royal Words</title>
-
+    <title>Royal Words: Puzzle</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" icon-path2="img/sprite.svg#logo"/>
+    <load
+      src="./partials/header.html"
+      icon-logo="img/logo.png"
+      icon-menu="img/sprite.svg#menu"
+    />
 
     <main>
       <load src="./partials/hero.html" />
+      <!-- Loads the specified .html file -->
     </main>
 
-    <load src="./partials/footer.html" />
+    <load src="./partials/footer.html" icon-logo="img/logo.png" />
+    <load
+      src="./partials/mobile-menu.html"
+      icon-logo="img/logo.png"
+      icon-close="img/sprite.svg#close"
+    />
 
     <script type="module" src="./main.js"></script>
   </body>
