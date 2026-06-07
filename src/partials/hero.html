@@ -1,0 +1,93 @@
+<section class="hero">
+  <div class="container hero-container">
+
+    <div class="hero-content">
+
+      <!-- Левая часть: текст и кнопка -->
+      <div class="hero-left-part">
+        <div class="hero-text-content">
+          <h1 class="hero-title">
+            <span class="hero-title-gradient">Discover Words.</span><br />
+            <span class="hero-title-gradient">Unlock Brilliance.</span>
+          </h1>
+          <p class="hero-desc">
+            A relaxing word puzzle journey with royal charm.
+          </p>
+        </div>
+
+        <a href="https://play.google.com/store/apps/details?id=com.DinozGames.RoyalWordsPuzzle&hl=en&gl=us" class="hero-btn" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
+          <img src="./img/google-play-badge.png" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <!-- Правая часть: обертка для всех 3-х картинок -->
+      <div class="hero-image-wrapper">
+        <picture class="hero-main-illustration">
+          <source
+            srcset="
+              ./img/hero/hero-main-ilustration-desktop.png     1x,
+              ./img/hero/hero-main-ilustration-desktop-@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./img/hero/hero-main-ilustration-mobile.png      1x,
+              ./img/hero/hero-main-ilustration-mobile-@2x.png  2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <img
+            class="hero-main-img"
+            src="./img/hero/hero-main-ilustration-mobile.png"
+            alt="Main illustration"
+          />
+        </picture>
+
+        <picture class="hero-king">
+          <source
+            srcset="
+              ./img/hero/hero-character-desktop.png     1x,
+              ./img/hero/hero-character-desktop-@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./img/hero/hero-character-mobile.png     1x,
+              ./img/hero/hero-character-mobile-@2x.png 2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <img
+            src="./img/hero/hero-character-mobile.png"
+            alt="King character"
+          />
+        </picture>
+
+        <picture class="words-puzzle">
+          <source
+            srcset="
+              ./img/hero/words-puzzle-desktop.png     1x,
+              ./img/hero/words-puzzle-desktop-@2x.png 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="
+              ./img/hero/words-puzzle-mobile.png     1x,
+              ./img/hero/words-puzzle-mobile-@2x.png 2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <img
+            src="./img/hero/words-puzzle-mobile.png"
+            alt="Words puzzle"
+          />
+        </picture>
+      </div>
+
+    </div>
+
+  </div>
+</section>
