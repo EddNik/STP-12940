@@ -1,8 +1,8 @@
-<<<<<<< HEAD
-=======
+/* ==========================================
+   MOBILE FIRST (Базовые стили)
+   ========================================== */
 .header {
-  width: 375px;
-  /* min-width: 320px; */
+  width: 100%; /* Заменили жесткие 375px на 100% для адаптивности */
   margin: 0 auto;
   padding: 8px 0;
   background-color: #7b2d38;
@@ -24,14 +24,10 @@
   justify-content: center;
 }
 
-.logo-icon {}
-
 .list-nav,
 .take-link {
   display: none;
 }
-
-/* .item-list-nav {} */
 
 .burger-menu {
   border: none;
@@ -47,24 +43,21 @@
 .burger-icon {
   width: 40px;
   height: 37px;
+  fill: #f8f6f0; /* Перенесли сюда из десктопного медиа-запроса! */
 }
 
-
+/* ==========================================
+   DESKTOP (От 1440px и выше)
+   ========================================== */
 @media only screen and (min-width: 1440px) {
   .header {
-    width: 1440px;
-    /* margin: 0 auto; */
-    padding: 8px 0;
+    width: 100%; /* Заменили жесткие 1440px */
+    max-width: 1440px; /* Чтобы хедер не растягивался до бесконечности на 4к мониторах */
   }
 
   .header .container {
-    /* max-width: 1440px; */
     padding: 0 72px;
   }
-
-  /* .nav {
-    justify-content: flex-start;
-  } */
 
   .list-nav,
   .take-link {
@@ -85,7 +78,6 @@
 
   .item-link {
     position: relative;
-
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -98,25 +90,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-
     margin-left: 110px;
-
-    /* padding: 17.5px 46px; */
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: #1e212b;
-
     width: 194px;
     height: 64px;
     background: linear-gradient(180deg, #ffe699 0%, #d48c1c 100%);
     border-radius: 16px;
     box-shadow: 0 18px 24px 0 rgba(29, 38, 74, 0.1), inset 0 -4px 6px 0 rgba(115, 57, 0, 0.45), inset 0 4px 4px 0 rgba(255, 255, 255, 0.72);
-
-    transition:
-      background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    /* Исправлена синтаксическая ошибка: запятая заменена на точку с запятой */
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .item-link:focus,
@@ -146,9 +132,4 @@
     color: #fff;
     background-color: transparent;
   }
-
-  .burger-icon {
-    fill: #f8f6f0;
-  }
 }
->>>>>>> 31f0be226e263fbfbd6b5b77a96ba9e705ff2d81

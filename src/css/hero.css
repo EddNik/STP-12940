@@ -1,15 +1,10 @@
-/* ==========================================
-   BASE STYLES (Общие сбросы)
-   ========================================== */
+
 img,
 picture {
   display: block;
   max-width: 100%;
 }
 
-/* ==========================================
-   HERO SECTION
-   ========================================== */
 .hero {
   display: flex;
   justify-content: center;
@@ -84,12 +79,14 @@ picture {
   width: 220px;
   transition: transform 0.2s ease;
   order: 3;
+  display: block;
+  height: 64px;
+   transition: transform 0.2s ease;
+
 }
 
-.hero-btn img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.hero-btn:hover {
+  transform: scale(1.05);
 }
 
 .hero-btn:hover {
@@ -139,16 +136,14 @@ picture {
   object-fit: contain;
 }
 
-/* ==========================================
-   DESKTOP (Жёсткий брейкпоинт 1440px)
-   ========================================== */
 @media only screen and (min-width: 1440px) {
-  .hero-container {
+  .hero-container .container{
     flex-direction: row;
     padding: 72px 72px 100px;
     gap: 24px;
     width: 1440px;
     height: 832px;
+
   }
 
   .hero-content {
