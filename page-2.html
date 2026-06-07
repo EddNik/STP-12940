@@ -5,45 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-BvvI0Brj.css">
+    <link rel="stylesheet" crossorigin href="/STP-12940/assets/styles-C73TaLJp.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path2}"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link active" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
-    </div>
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <img src="{=$icon-logo}" width="72" height="72" alt="Logo" />
+      </a>
+
+      <ul class="list-nav">
+        <li class="item-list-nav">
+          <a class="item-link" href="#about">About</a>
+        </li>
+        <li class="item-list-nav">
+          <a class="item-link" href="#how">How to Play</a>
+        </li>
+        <li class="item-list-nav">
+          <a class="item-link" href="#features">Features</a>
+        </li>
+        <li class="item-list-nav">
+          <a class="item-link" href="#faq">FAQ</a>
+        </li>
+        <li class="item-list-nav">
+          <a class="item-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <a class="take-link" href="#play-now">Play Now</a>
+
+      <button class="burger-menu bth-open" type="button" aria-label="Open menu">
+        <svg class="burger-icon" width="44" height="44">
+          <use href="{=$icon-menu}"></use>
+        </svg>
+      </button>
+    </nav>
   </div>
 </header>
+
 
     <main>
       <div class="container">
@@ -57,16 +56,28 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
+    <a class="footer-nav-logo" href="./index.html" aria-label="Site logo">
+      <img src="{=$icon-logo}" width="72" height="72" alt="Logo" />
+    </a>
+
+    <a
+      class="footer-nav-item footer-privacy"
+      href="./page-2.html"
+      rel="noopener noreferrer"
+    >
+      Privacy Policy
+    </a>
+
+    <a
+      class="footer-nav-item footer-terms"
+      href="./page-3.html"
+      rel="noopener noreferrer"
+    >
+      Terms of Service
+    </a>
+
+    <p class="footer-nav-item footer-rights">
+      2026 coretrail.online - All rights reserved.
     </p>
   </div>
 </footer>
