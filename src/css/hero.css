@@ -76,7 +76,7 @@ picture {
 }
 
 .hero-btn {
-  width: 220px;
+  width: 312px;
   transition: transform 0.2s ease;
   order: 3;
   display: block;
@@ -181,11 +181,7 @@ picture {
     height: 660px;
   }
 
-  .hero-btn {
-    order: 0;
-    width: 311.11px;
-    height: 90px;
-  }
+  
 
   .hero-title {
     font-size: 72px;
