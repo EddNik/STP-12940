@@ -42,12 +42,12 @@
 .legal-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   width: 100%;
-  max-width: 980px;
+  max-width: 343px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .legal-h1, .legal-h2, .legal-h3, .legal-h4, .legal-p, .legal-caption, .legal-ul {
@@ -143,6 +143,16 @@
   display: flex;
   align-items: center;
   padding-left: 72px;
+}
+
+.legal-content-wrapper {
+
+  gap: 16px;
+
+  max-width: 980px;
+
+  padding-left: 10px;
+  padding-right: 10px;
 }
   .legal-back-btn {
     width: 214px;
