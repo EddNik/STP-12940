@@ -13,14 +13,6 @@
   transition: transform 0.3s;
 }
 
-.mobile-menu.is-open {
-  transform: translateX(0);
-}
-
-.is-scroll-disabled {
-  overflow: hidden;
-}
-
 .close-btn {
   position: absolute;
   background-color: transparent;
@@ -32,6 +24,14 @@
   top: 28px;
   right: 28px;
   padding: 0;
+}
+
+[data-visible='open'] {
+  transform: translateX(0);
+}
+
+[data-visible='close'] {
+  transform: translateX(100%);
 }
 
 .nav-mob {
