@@ -1,0 +1,276 @@
+/* ==========================================
+   FEATURES SECTION - MOBILE FIRST
+   ========================================== */
+
+.features {
+  display: flex;
+  justify-content: center;
+  background-color: #FCF9F2; /* Подстраиваем под общий фон */
+  overflow: hidden;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px 48px;
+  gap: 32px;
+  width: 100%;
+}
+
+/* Header */
+.features-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.features-title {
+  font-family: var(--third-family); /* Fredoka One */
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+
+  /* Gold fill & effect */
+  background: linear-gradient(180deg, #FFE699 0%, #D48C1C 94.83%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 18px 24px rgba(29, 38, 74, 0.1);
+}
+
+.features-subtitle {
+  font-family: var(--second-family); /* Fredoka */
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #1E212B;
+  width: 100%;
+}
+
+/* Cards List */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 345px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+/* Base Card Styles */
+.feature-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 217px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  width: 225px;
+  border-radius: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Red Cards */
+.feature-card-red {
+  justify-content: flex-end;
+}
+
+.feature-card-red .feature-content {
+  background: #7B2D38;
+  box-shadow: 0px 4px 20px rgba(93, 31, 41, 0.48);
+  padding: 24px 16px 24px 32px;
+}
+
+.feature-card-red .feature-item-title,
+.feature-card-red .feature-item-desc {
+  color: #F8F6F0;
+}
+
+/* White Cards */
+.feature-card-white {
+  justify-content: flex-start;
+}
+
+.feature-card-white .feature-content {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(30, 33, 43, 0.16);
+  padding: 24px 32px 24px 16px;
+}
+
+.feature-card-white .feature-item-title,
+.feature-card-white .feature-item-desc {
+  color: #1E212B;
+}
+
+/* Text elements */
+.feature-item-title {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  width: 100%;
+}
+
+.feature-item-desc {
+  font-family: var(--font-family); /* Nunito Sans */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 100%;
+}
+
+/* Buttons */
+.feature-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 177px;
+  height: 64px;
+  margin-top: 6px;
+
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 20px;
+  color: #1E212B;
+
+  background: linear-gradient(180deg, #FFE699 0%, #D48C1C 94.83%);
+  box-shadow: 0px 18px 24px rgba(29, 38, 74, 0.1),
+              inset 0px 4px 4px rgba(255, 255, 255, 0.72),
+              inset 0px -4px 6px rgba(115, 57, 0, 0.45);
+  border-radius: 16px;
+  transition: transform 0.2s ease;
+}
+
+.feature-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Images Positioning */
+.feature-image-wrapper {
+  position: absolute;
+  width: 147px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* чтобы картинка не мешала клику по карточке */
+}
+
+.feature-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.15)); /* Добавляет глубины */
+}
+
+.feature-image-left {
+  left: 0;
+}
+
+.feature-image-right {
+  right: 0;
+}
+
+
+/* ==========================================
+   DESKTOP (От 1440px)
+   ========================================== */
+@media only screen and (min-width: 1440px) {
+  .features-container {
+    padding: 0px 72px 100px;
+    gap: 56px;
+    max-width: 1440px;
+  }
+
+  .features-header {
+    max-width: 1296px;
+    margin: 0;
+  }
+
+  .features-title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  .features-subtitle {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .features-list {
+    max-width: 1296px;
+    margin: 0;
+  }
+
+  /* Имитация margin: -24px из макета Figma (карточки слегка "наезжают" друг на друга) */
+  .feature-item + .feature-item {
+    margin-top: -24px;
+  }
+
+  .feature-item {
+    width: 1010px;
+    height: 373px;
+  }
+
+  /* Зигзагообразное выравнивание по ширине 1296px */
+  .feature-card-red {
+    align-self: flex-start;
+  }
+
+  .feature-card-white {
+    align-self: flex-end;
+  }
+
+  /* Размеры контейнеров контента */
+  .feature-card-red .feature-content,
+  .feature-card-white .feature-content {
+    width: 746px;
+    height: 260px;
+    padding: 24px 32px 24px 56px; /* В макете отступы десктопа одинаковые для всех карточек */
+    gap: 10px;
+  }
+
+  /* Типографика десктопа */
+  .feature-item-title {
+    font-size: 40px;
+  }
+
+  .feature-item-desc {
+    font-size: 24px;
+  }
+
+  /* Кнопки */
+  .feature-btn {
+    width: 230px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  /* Размеры изображений */
+  .feature-image-wrapper {
+    width: 306px;
+    height: 373px;
+  }
+
+  .feature-image-wrapper img {
+    height: 100%;
+  }
+}
