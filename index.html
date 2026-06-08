@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/STP-12940/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12940/assets/styles-CIqqdmGA.css">
+    <link rel="stylesheet" crossorigin href="/STP-12940/assets/styles-RahLaZGe.css">
   </head>
   <body>
     <header class="header">
@@ -39,9 +39,20 @@
           <a class="item-link" href="#contact">Contact</a>
         </li>
       </ul>
-      <a class="take-link" href="#play-now">Play Now</a>
+      <a
+        class="take-link"
+        href="https://play.google.com/store/apps/details?id=com.DinozGames.RoyalWordsPuzzle&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Play Now</a
+      >
 
-      <button class="burger-menu bth-open" type="button" aria-label="Open menu">
+      <button
+        class="burger-menu"
+        type="button"
+        aria-label="Open menu"
+        data-action="open"
+      >
         <svg class="burger-icon" width="44" height="44">
           <use href="/STP-12940/assets/sprite-9lGQlLy9.svg#menu"></use>
         </svg>
@@ -71,11 +82,12 @@
         <a href="https://play.google.com/store/apps/details?id=com.DinozGames.RoyalWordsPuzzle&hl=en&gl=us" class="hero-btn" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play">
           <svg class="google-play-icon" aria-hidden="true">
     <use href="/STP-12940/assets/sprite-9lGQlLy9.svg#googleplay"></use>
+    <!-- <use href="./img/googleplay.svg"></use> -->
+    <!-- <img class="google-play-icon" src="./img/googleplay.svg" alt="Get it on Google Play"> -->
   </svg>
         </a>
       </div>
 
-      <!-- Правая часть: обертка для всех 3-х картинок -->
       <div class="hero-image-wrapper">
         <picture class="hero-main-illustration">
           <source
@@ -159,9 +171,9 @@
   </div>
 </footer>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-visible="close">
   <div class="container">
-    <button class="close-btn" type="button">
+    <button class="close-btn" type="button" data-action="close">
       <svg class="close-icon" width="22" height="22">
         <use href="/STP-12940/assets/sprite-9lGQlLy9.svg#close"></use>
       </svg>
@@ -185,7 +197,13 @@
           <a class="link-mob" href="#contact">Contact</a>
         </li>
       </ul>
-      <a class="mob-menu" href="#play-now">Play Now</a>
+      <a
+        class="mob-menu"
+        href="https://play.google.com/store/apps/details?id=com.DinozGames.RoyalWordsPuzzle&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Play Now</a
+      >
     </nav>
 
     <a class="nav-logo-mob" href="./index.html" aria-label="Site logo">
