@@ -1,11 +1,9 @@
-/* ==========================================
-   FEATURES SECTION - MOBILE FIRST
-   ========================================== */
+
 
 .features {
   display: flex;
   justify-content: center;
-  background-color: #FCF9F2; /* Подстраиваем под общий фон */
+  background-color: #FCF9F2;
   overflow: hidden;
 }
 
@@ -18,7 +16,6 @@
   width: 100%;
 }
 
-/* Header */
 .features-header {
   display: flex;
   flex-direction: column;
@@ -30,14 +27,13 @@
 }
 
 .features-title {
-  font-family: var(--third-family); /* Fredoka One */
+  font-family: var(--third-family);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
   text-align: center;
   width: 100%;
 
-  /* Gold fill & effect */
   background: linear-gradient(180deg, #FFE699 0%, #D48C1C 94.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,7 +43,7 @@
 }
 
 .features-subtitle {
-  font-family: var(--second-family); /* Fredoka */
+  font-family: var(--second-family);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.2;
@@ -56,7 +52,6 @@
   width: 100%;
 }
 
-/* Cards List */
 .features-list {
   display: flex;
   flex-direction: column;
@@ -67,7 +62,6 @@
   gap: 32px;
 }
 
-/* Base Card Styles */
 .feature-item {
   position: relative;
   display: flex;
@@ -88,7 +82,6 @@
   z-index: 1;
 }
 
-/* Red Cards */
 .feature-card-red {
   justify-content: flex-end;
 }
@@ -104,7 +97,6 @@
   color: #F8F6F0;
 }
 
-/* White Cards */
 .feature-card-white {
   justify-content: flex-start;
 }
@@ -120,7 +112,6 @@
   color: #1E212B;
 }
 
-/* Text elements */
 .feature-item-title {
   font-family: var(--second-family);
   font-weight: 600;
@@ -130,14 +121,13 @@
 }
 
 .feature-item-desc {
-  font-family: var(--font-family); /* Nunito Sans */
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   width: 100%;
 }
 
-/* Buttons */
 .feature-btn {
   display: flex;
   justify-content: center;
@@ -163,21 +153,20 @@
   transform: scale(1.05);
 }
 
-/* Images Positioning */
 .feature-image-wrapper {
   position: absolute;
   width: 147px;
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none; /* чтобы картинка не мешала клику по карточке */
+  pointer-events: none;
 }
 
 .feature-image-wrapper img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.15)); /* Добавляет глубины */
+  filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.15));
 }
 
 .feature-image-left {
@@ -189,9 +178,6 @@
 }
 
 
-/* ==========================================
-   DESKTOP (От 1440px)
-   ========================================== */
 @media only screen and (min-width: 1440px) {
   .features-container {
     padding: 0px 72px 100px;
@@ -219,7 +205,6 @@
     margin: 0;
   }
 
-  /* Имитация margin: -24px из макета Figma (карточки слегка "наезжают" друг на друга) */
   .feature-item + .feature-item {
     margin-top: -24px;
   }
@@ -229,7 +214,6 @@
     height: 373px;
   }
 
-  /* Зигзагообразное выравнивание по ширине 1296px */
   .feature-card-red {
     align-self: flex-start;
   }
@@ -238,16 +222,13 @@
     align-self: flex-end;
   }
 
-  /* Размеры контейнеров контента */
   .feature-card-red .feature-content,
   .feature-card-white .feature-content {
     width: 746px;
     height: 260px;
-    padding: 24px 32px 24px 56px; /* В макете отступы десктопа одинаковые для всех карточек */
-    gap: 10px;
+    padding: 24px 32px 24px 56px;
   }
 
-  /* Типографика десктопа */
   .feature-item-title {
     font-size: 40px;
   }
@@ -256,7 +237,6 @@
     font-size: 24px;
   }
 
-  /* Кнопки */
   .feature-btn {
     width: 230px;
     font-size: 24px;
@@ -264,7 +244,6 @@
     margin-top: 0;
   }
 
-  /* Размеры изображений */
   .feature-image-wrapper {
     width: 306px;
     height: 373px;
