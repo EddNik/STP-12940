@@ -2,6 +2,10 @@
 .header {
   width: 100%;
 
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
   margin: 0 auto;
   padding: 8px 0;
   background-color: #7b2d38;
