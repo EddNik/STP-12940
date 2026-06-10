@@ -1,0 +1,165 @@
+.about {
+  padding: 0 0 48px 0;
+  background-color: #f2efe9;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-text {
+  order: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-title {
+  font-family: var(--third-family);
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(180deg, #ffe699 0%, #d48c1c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 18px 24px 0 rgba(29, 38, 74, 0.1), inset 0 -4px 6px 0 rgba(115, 57, 0, 0.45), inset 0 4px 4px 0 rgba(255, 255, 255, 0.72);
+}
+
+.about-desc {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #1e212b;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  color: #1e212b;
+}
+
+.about-screen {
+  order: 2;
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 0 25px;
+  width: 100%;
+
+
+}
+
+.about-game {
+  border-radius: 24px;
+  box-shadow: 0 0 40px 0 rgba(255, 165, 0, 0.64);
+}
+
+.about-game-img {
+  width: 201px;
+  height: 351px;
+  border-radius: inherit;
+}
+
+.about-king {
+  position: absolute;
+  left: 167px;
+  top: 18px;
+  z-index: 1;
+}
+
+.about-king-img {
+  width: 171px;
+  height: 346px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .about .container {
+    height: 655px;
+  }
+
+  .about {
+    padding: 72px 0;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .about-text {
+    order: 2;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 648px;
+  }
+
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .about-desc {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .about-detailed {
+    font-size: 24px;
+  }
+
+
+
+  .about-screen {
+    order: 1;
+
+    display: flex;
+    justify-content: flex-start;
+
+    width: 648px;
+    padding: 0;
+  }
+
+  .about-game {
+    position: absolute;
+  }
+
+  .about-game-img {
+    width: 375px;
+    height: 655px;
+    border-radius: inherit;
+  }
+
+  .about-king {
+    position: relative;
+    left: 233px;
+    top: 25px;
+    z-index: 1;
+  }
+
+  .about-king-img {
+    width: 500px;
+    height: 675px;
+  }
+
+}
