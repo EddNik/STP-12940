@@ -1,8 +1,6 @@
-// import Swiper JS
 import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 
-//<!-- Initialize Swiper -->
 var swiper = new Swiper('#mySwiper', {
   modules: [Pagination],
   slidesPerView: 1,
