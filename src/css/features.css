@@ -3,7 +3,7 @@
 .features {
   display: flex;
   justify-content: center;
-  background-color: #FCF9F2;
+  background-color: #f2efe9;
   overflow: hidden;
 }
 
@@ -28,12 +28,10 @@
 
 .features-title {
   font-family: var(--third-family);
-  font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
   text-align: center;
   width: 100%;
-
   background: linear-gradient(180deg, #FFE699 0%, #D48C1C 94.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -122,7 +120,6 @@
 
 .feature-item-desc {
   font-family: var(--font-family);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   width: 100%;
@@ -135,12 +132,10 @@
   width: 177px;
   height: 64px;
   margin-top: 6px;
-
   font-family: var(--second-family);
   font-weight: 600;
   font-size: 20px;
   color: #1E212B;
-
   background: linear-gradient(180deg, #FFE699 0%, #D48C1C 94.83%);
   box-shadow: 0px 18px 24px rgba(29, 38, 74, 0.1),
               inset 0px 4px 4px rgba(255, 255, 255, 0.72),
@@ -164,8 +159,6 @@
 
 .feature-image-wrapper img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
   filter: drop-shadow(0px 8px 16px rgba(0,0,0,0.15));
 }
 
@@ -176,7 +169,6 @@
 .feature-image-right {
   right: 0;
 }
-
 
 @media only screen and (min-width: 1440px) {
   .features-container {

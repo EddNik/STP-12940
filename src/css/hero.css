@@ -8,7 +8,7 @@ picture {
 .hero {
   display: flex;
   justify-content: center;
-  background-color: #FCF9F2;
+  background-color: #f2efe9;
   overflow: hidden;
 }
 
