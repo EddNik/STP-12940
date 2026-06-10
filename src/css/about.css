@@ -1,5 +1,5 @@
 .about {
-  padding: 72px 0;
+  padding: 0 0 48px 0;
   background-color: #f2efe9;
 }
 
@@ -12,6 +12,7 @@
 }
 
 .about-text {
+  order: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,11 +41,123 @@
   color: #1e212b;
 }
 
-.about-text {
+.about-detailed {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #1e212b;
 }
 
-.about-screen {}
+.about-screen {
+  order: 2;
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+
+  padding: 0 25px;
+  width: 100%;
+
+
+}
+
+.about-game {
+  border-radius: 24px;
+  box-shadow: 0 0 40px 0 rgba(255, 165, 0, 0.64);
+}
+
+.about-game-img {
+  width: 201px;
+  height: 351px;
+  border-radius: inherit;
+}
+
+.about-king {
+  position: absolute;
+  left: 167px;
+  top: 18px;
+  z-index: 1;
+}
+
+.about-king-img {
+  width: 171px;
+  height: 346px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .about .container {
+    height: 655px;
+  }
+
+  .about {
+    padding: 72px 0;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .about-text {
+    order: 2;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 648px;
+  }
+
+
+  .about-title {
+    font-size: 48px;
+  }
+
+  .about-desc {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .about-detailed {
+    font-size: 24px;
+  }
+
+
+
+  .about-screen {
+    order: 1;
+
+    display: flex;
+    justify-content: flex-start;
+
+    width: 648px;
+    padding: 0;
+  }
+
+  .about-game {
+    position: absolute;
+  }
+
+  .about-game-img {
+    width: 375px;
+    height: 655px;
+    border-radius: inherit;
+  }
+
+  .about-king {
+    position: relative;
+    left: 233px;
+    top: 25px;
+    z-index: 1;
+  }
+
+  .about-king-img {
+    width: 500px;
+    height: 675px;
+  }
+
+}
