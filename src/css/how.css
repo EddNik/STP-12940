@@ -1,6 +1,7 @@
 .how {
   padding: 0 0 48px 0;
   background-color: #f2efe9;
+  scroll-margin-top: 88px;
 }
 
 .how-text {
@@ -75,6 +76,7 @@
 @media only screen and (min-width: 1440px) {
   .how {
     padding: 0 0 90px 0;
+    scroll-margin-top: 102px;
   }
 
   .how-title {
